@@ -1,6 +1,4 @@
-# Banking-Transaction-Fraud-Detection-ML-PowerBI-
-
-# 🏦 Bank Transaction Fraud Detection (IEEE-CIS Dataset)
+# Bank Transaction Fraud Detection (IEEE-CIS Dataset)
 
 ## 📌 Overview
 This project focuses on detecting fraudulent online transactions using the **IEEE-CIS Fraud Detection dataset**.  
