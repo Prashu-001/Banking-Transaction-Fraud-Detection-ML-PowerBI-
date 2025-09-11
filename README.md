@@ -30,9 +30,10 @@ We applied **feature engineering, resampling techniques (SMOTE), machine learnin
 
 ## 🧠 Models Used
 - **Logistic Regression** (with class weights, scaled features)  
-- **Random Forest Classifier**  
-- **LightGBM**  
-- **CatBoost**  
+- **Random Forest Classifier**
+- **Decision Tree**  
+- **CatBoost**
+- **Ensemble Learning**
 - **Neural Networks (Keras/TensorFlow)**  
 
 ---
@@ -52,13 +53,13 @@ Due to imbalanced nature, we focused on **Recall** and **F1-score** for fraud cl
 - **LightGBM** and **CatBoost** outperformed baseline models.  
 - Feature engineering with fraud-rate & frequency mappings boosted performance.  
 
-| Model              | Accuracy | Recall (Fraud) | Precision (Fraud) | F1-score |
-|--------------------|----------|----------------|-------------------|----------|
-| Logistic Regression | 96%     | 0.45           | 0.62              | 0.52     |
-| Random Forest      | 97%     | 0.51           | 0.65              | 0.57     |
-| LightGBM           | 98%     | 0.59           | 0.72              | 0.65     |
-| CatBoost           | 98%     | 0.61           | 0.74              | 0.67     |
-
+| Model               | Accuracy | Recall (Fraud) | Precision (Fraud) | F1-score |
+|---------------------|----------|----------------|-------------------|----------|
+| Logistic Regression | 97%      | 0.52           | 0.53              | 0.53     |
+| Random Forest       | 97%      | 0.59           | 0.65              | 0.63     |
+| LightGBM            | 98%      | 0.65           | 0.69              | 0.67     |
+| CatBoost            | 98%      | 0.65           | 0.69              | 0.67     |
+| Ensemble            | 98%      | 0.71           | 0.73              | 0.72     |
 ---
 
 ## 📈 Visualization (Power BI)
@@ -82,8 +83,8 @@ The Power BI dashboard provides a business-friendly view of fraud patterns and m
 ## 📌 How to Run
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/ieee-fraud-detection.git
-   cd ieee-fraud-detection
+   git clone https://github.com/your-username/Bank-Transaction-Fraud-Detection-using-ML-PowerBI.git
+   cd Bank-Transaction-Fraud-Detection-using-ML-PowerBI
    ```
 2. Install dependencies:
    ```bash
@@ -103,7 +104,6 @@ The Power BI dashboard provides a business-friendly view of fraud patterns and m
 - pandas, numpy  
 - scikit-learn  
 - imbalanced-learn  
-- lightgbm  
 - catboost  
 - tensorflow / keras  
 - matplotlib, seaborn  
